@@ -6,22 +6,12 @@ import java.util.Date;
  * Created by desarrollo on 13/06/2017.
  */
 
-public class Cartera {
+public class Pokemon {
 
     private Integer id;
 
     private String descripcion;
     private Date fechaCreacion;
-
-    public Cartera() {
-    }
-
-    public Cartera(Integer id, String descripcion, Date fechaCreacion){
-        this.id = id;
-        this.descripcion = descripcion;
-        this.fechaCreacion = fechaCreacion;
-
-    }
 
     public Integer getId() {
         return id;

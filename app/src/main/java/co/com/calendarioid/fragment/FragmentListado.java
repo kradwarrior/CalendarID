@@ -37,17 +37,18 @@ public class FragmentListado extends Fragment {
     ListView listView;
 
     @Override
-    public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState){
-
-        return inflater.inflate(R.layout.fragment_listado, container, false);
+    public void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
     }
 
     @Override
-    public void onActivityCreated(@Nullable Bundle savedInstanceState) {
-        super.onActivityCreated(savedInstanceState);
+    public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState){
+        View view = inflater.inflate(R.layout.fragment_listado, container, false);
 
-        listView = (ListView) getView().findViewById(R.id.LstListado);
+        listView = (ListView) view.findViewById(R.id.LstListado);
         listView.setAdapter(new AdaptadorCorreos(this));
+
+        return view;
     }
 
     class AdaptadorCorreos extends ArrayAdapter<Correo> {

@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">CalendarioID</string>
+    <string name="db_name">calendarioid.db</string>
+    <string name="ruta_bd">/data/data/%s/databases/</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>
